@@ -46,7 +46,7 @@ jobs:
           asset_content_type: application/binary
 
       - name: Build Windows
-        run: GOOS=windows GOARCH=amd64 go build -o bin/app-amd64.exe app.go
+        run: GOOS=windows GOARCH=amd64 go build -o helloWorld.exe .
 
       - name: Upload Windows Release Asset
         id: upload-windows-release-asset
